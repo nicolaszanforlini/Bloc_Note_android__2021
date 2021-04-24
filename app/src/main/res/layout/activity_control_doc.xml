@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ControlDocActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView style="@style/themePrincipale.textTitle"
+        android:id="@+id/txtTitleActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_view_stroke"
+        android:text="@string/txtBlocNote"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lytBtn"
+            android:layout_below="@id/txtTitleActivity"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/btnMenu"
+                android:text="@string/txtBtnReturn"
+                android:layout_marginTop="@dimen/_Margin"
+                android:id="@+id/btnReturn"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/black"
+                app:backgroundTint="@drawable/btn_menu"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/btnMenu"
+                android:text="@string/txtBtnSave"
+                android:layout_marginTop="@dimen/_Margin"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginStart="@dimen/margin"
+                android:id="@+id/btnSave"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/black"
+                app:backgroundTint="@drawable/btn_menu"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/btnMenu"
+                android:text="@string/txtBtnClear"
+                android:layout_marginTop="@dimen/_Margin"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginStart="@dimen/margin"
+                android:id="@+id/btnClear"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/black"
+                app:backgroundTint="@drawable/btn_menu"
+                />
+
+        </LinearLayout>
+<!-- checkBox
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btnClear"
+            android:layout_below="@+id/txtTitleActivity"
+            android:layout_marginTop="@dimen/Size"
+            android:layout_marginLeft="@dimen/_Margin"
+            android:text="@string/txtChexBoxBold"
+            android:textStyle="bold"
+            android:id="@+id/checkBoxBold"
+            android:layout_toEndOf="@+id/btnClear"
+            android:layout_marginStart="@dimen/_Margin"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btnClear"
+            android:layout_marginLeft="@dimen/_Margin"
+            android:layout_below="@+id/checkBoxBold"
+            android:text="@string/txtCheckBoxItalic"
+            android:textStyle="italic"
+            android:id="@+id/checkBoxItalic"
+            android:layout_marginStart="@dimen/_Margin"
+            android:layout_toEndOf="@+id/btnClear" />
+ end checkBox -->
+
+
+        <EditText style="@style/edtText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lytBtn"
+            android:layout_marginTop="@dimen/_Margin"
+            android:id="@+id/editTxtMultiligne"
+            android:padding="@dimen/margin"
+            android:hint="@string/txtEditPlain"
+            android:background="@drawable/edit_cust"
+            android:gravity="top"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_Margin"
+            android:autofillHints="no"
+            tools:ignore="SpUsage"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

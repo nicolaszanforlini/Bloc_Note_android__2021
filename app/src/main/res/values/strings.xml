@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Bloc Note</string>
+    <string name="txtBlocNote">Bloc Note</string>
+    <string name="txtBtnSave">save</string>
+    <string name="txtChexBoxBold">bold</string>
+    <string name="txtCheckBoxItalic">italic</string>
+    <string name="txtEditPlain">text here :</string>
+    <string name="txtBtnNewDoc">+</string>
+    <string name="txtNewDoc">New file</string>
+    <string name="txtNewFile">file</string>
+    <string name="txtBtnReturn">home</string>
+    <string name="txtEditTitle">file name :</string>
+    <string name="txtBtnClear">clear</string>
+    <string name="txtBtnDelete">delete</string>
+</resources>
